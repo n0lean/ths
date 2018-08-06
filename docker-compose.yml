@@ -1,0 +1,16 @@
+version: "3"
+services:
+  web:
+    image: ths:test
+    deploy:
+      replicas: 5
+      restart_policy:
+        condition: on-failure
+    ports:
+      - "6000:6666"
+    networks:
+      - webnet
+
+networks:
+  webnet:
+
