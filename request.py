@@ -3,7 +3,6 @@ import pickle
 import torchvision
 from torch.utils.data import DataLoader
 from torchvision import transforms
-import torch
 
 if __name__ == '__main__':
     host = 'http://0.0.0.0:6000/'
